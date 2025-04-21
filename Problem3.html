@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Error Example</title>
+  <style>
+    /* Styling for the error message */
+    .error-message {
+      background-color: #f8d7da; /* Light red background */
+      color: #721c24; /* Dark red text */
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 5px;
+      width: fit-content;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video with a non-working source -->
+  <video width="320" height="240" controls>
+    <source src="invalid-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Error message shown below the video -->
+  <p class="error-message"><em>Sorry, the video could not be loaded. Please try again later.</em></p>
+
+</body>
+</html>
